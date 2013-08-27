@@ -1,0 +1,33 @@
+bin_PROGRAMS = flockOutput flockNoise flockMoves flockBumps \
+               flockSpeed flockOSC netBump2Sound
+
+flockOutput_SOURCES = flockOutput.c
+flockOutput_LDADD = ../flock/libflock.la
+
+flockNoise_SOURCES = flockNoise.c
+flockNoise_LDADD = ../flock/libflock.la
+flockNoise_LDFLAGS = -lm
+
+flockMoves_SOURCES = flockMoves.c
+flockMoves_LDADD = ../flock/libflock.la
+
+flockBumps_SOURCES = flockBumps.c
+flockBumps_LDADD = ../flock/libflock.la
+
+flockSpeed_SOURCES = flockSpeed.c
+flockSpeed_LDADD = ../flock/libflock.la
+
+flockOSC_SOURCES = flockOSC.c OSC.c OSC.h
+flockOSC_LDADD = ../flock/libflock.la
+flockOSC_LDFLAGS = -lm
+
+netBump2Sound_SOURCES = netBump2Sound.c
+
+# install-exec-local:
+# 	chmod +s $(DESTDIR)$(bindir)/flockOutput
+# 	chmod +s $(DESTDIR)$(bindir)/flockNoise
+# 	chmod +s $(DESTDIR)$(bindir)/flockMoves
+# 	chmod +s $(DESTDIR)$(bindir)/flockBumps
+# 	chmod +s $(DESTDIR)$(bindir)/flockSpeed
+# 	chmod +s $(DESTDIR)$(bindir)/flockOSC
+# 	chmod +s $(DESTDIR)$(bindir)/flockOSC2

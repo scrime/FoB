@@ -1,0 +1,38 @@
+In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:12,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:12,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/Tracker.h:19,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/Flock.h:19,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/FoBController.m:42:
+/Developer/SDKs/MacOSX10.4u.sdk/usr/include/stdarg.h:4:25: error: stdarg.h: No such file or directory
+In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:16,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:12,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/Tracker.h:19,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/Flock.h:19,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/FoBController.m:42:
+/Developer/SDKs/MacOSX10.4u.sdk/usr/include/float.h:8:24: error: float.h: No such file or directory
+In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:32,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:125,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:24,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:12,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/Tracker.h:19,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/Flock.h:19,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/FoBController.m:42:
+/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:29:23: error: xmmintrin.h: No such file or directory
+In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:32,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:125,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:24,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,
+                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h:12,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/Tracker.h:19,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/Flock.h:19,
+                 from /Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/FoBController.m:42:
+/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:254: error: expected specifier-qualifier-list before '__m128'
+/Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/FoBController.m: In function '-[FoBController threadMain:]':
+/Users/josephlarralde/Documents/__GeeksCorner/SCRIME/Code Aerodrum/FoB/FoBController.m:687: warning: implicit declaration of function 'fill_host_addr'

@@ -1,0 +1,91 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 7CD2F13911B5143B0038624A /* FoB */;
+		activeTarget = 923D74DE0C117AF4000E5446 /* libflock */;
+		codeSenseManager = 7CD2F14711B5145B0038624A /* Code sense */;
+		executables = (
+			7CD2F13911B5143B0038624A /* FoB */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 297079867;
+			PBXWorkspaceStateSaveDate = 297079867;
+		};
+		sourceControlManager = 7CD2F14611B5145B0038624A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	7CD2F13911B5143B0038624A /* FoB */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = FoB;
+		sourceDirectories = (
+		);
+	};
+	7CD2F14611B5145B0038624A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	7CD2F14711B5145B0038624A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8D1107260486CEB800E47090 /* FoB */ = {
+		activeExec = 0;
+		executables = (
+			7CD2F13911B5143B0038624A /* FoB */,
+		);
+	};
+	923D74DE0C117AF4000E5446 /* libflock */ = {
+		activeExec = 0;
+	};
+	923D75C10C118987000E5446 /* libflock-static */ = {
+		activeExec = 0;
+	};
+	92894CD010A5B31700AC39F8 /* libusb-static */ = {
+		activeExec = 0;
+	};
+}

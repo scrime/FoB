@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /usr/local/share/PolhemusUsb
+./fxload -t fx2lp -D $(./getdevpath -v 0f44 -p ff21) -I LbtyUsbHS.hex -s a3load.hex
+
+

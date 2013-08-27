@@ -1,0 +1,109 @@
+2003-01-22  Anthony Beurive'  <anthony.beurive@free.fr>
+
+	* better check of headers.
+
+2002-10-30  Anthony Beurive'  <beurive@labri.u-bordeaux.fr>
+
+	* changed OSC implementation.
+
+2002-10-24  Anthony Beurive'  <beurive@labri.u-bordeaux.fr>
+
+	* new program flockOSC2 (with loose OSC implementation).
+
+2002-10-16  Anthony Beurive'  <beurive@labri.u-bordeaux.fr>
+
+	* new program flockBumps.
+
+	* flock/flock_error.c: updated error strings.
+
+	* new program flockMoves.
+
+	* flockUtils/flockNoise.c (main): noise level for each bird and
+	each coordinate.
+
+	* flock/flock_hl.c (flock_check_status): continuing even when bird
+	appears to have an error code.
+
+2002-10-15  Anthony Beurive'  <beurive@labri.u-bordeaux.fr>
+
+	* enhanced high-level operations.  Working 'flock_get_record'.
+
+2002-10-01  Anthony Beurive'  <beurive@labri.u-bordeaux.fr>
+
+	* flockUtils/flockOutput.c: redondant flock_check_status removed.
+
+	* code normalization.
+
+2002-07-26  Anthony Beurive'  <beurive@labri.u-bordeaux.fr>
+
+	* gone to CVS.
+
+2002-05-21  Anthony Beurive  <beurive@labri.u-bordeaux.fr>
+
+	* libflock.m4 included in distribution.
+
+2002-05-09  Anthony Beurive  <beurive@labri.u-bordeaux.fr>
+
+	* added configure lines from 'autoscan' output.
+
+2002-04-03  Anthony Beurive  <beurive@labri.u-bordeaux.fr>
+
+	* flockOutput in flockUtils.  Removed flockGesture.
+
+	* using select instead of sleeping.  Response time improved.
+
+2002-04-02  Anthony Beurive  <beurive@labri.u-bordeaux.fr>
+
+	* changes in tests and flockUtils.
+
+2002-03-27  Anthony Beurive  <beurive@labri.u-bordeaux.fr>
+
+	* bug in flock_bird_record_fill.  Bitmask for least significant
+	bytes was wrong.
+
+	* changed nanosleep duration to 5ms in flockUtils.  More tests
+	needed for duration smaller or equal to 2ms (because of active
+	waiting at high priorities).
+
+	* stream mode in flockOSC.
+
+2002-03-21  Anthony Beurive  <beurive@labri.u-bordeaux.fr>
+
+	* getting more priority in flockOSC if possible. (untested)
+
+	* changed nanosleep duration to 1ms in flockUtils. (untested)
+
+2002-03-14  Anthony Beurive  <beurive@labri.u-bordeaux.fr>
+
+	* option -n for flockGesture.
+
+2002-02-18  Anthony Beurivé  <beurive@labri.u-bordeaux.fr>
+
+	* flockNoise.
+
+	* flockUtils directory.
+
+2002-02-17  Anthony Beurivé  <beurive@labri.u-bordeaux.fr>
+
+	* flockGesture.
+
+2002-01-22  Anthony Beurivé  <beurive@labri.u-bordeaux.fr>
+
+	* flockOSC.
+
+2001-12-11  Anthony Beurivé  <beurive@labri.u-bordeaux.fr>
+
+	* updated tests/test.c.
+
+	* hint sizes for writing and reading.
+
+2001-12-10  Anthony Beurivé  <beurive@labri.u-bordeaux.fr>
+
+	* tests directory with one test.
+
+	* flock commands.
+
+2001-12-04  Anthony Beurivé  <beurive@labri.u-bordeaux.fr>
+
+	* initial version.
+

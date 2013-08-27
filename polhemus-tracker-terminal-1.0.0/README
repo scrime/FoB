@@ -1,0 +1,55 @@
+Instructions on how to build and install the Polhemus Terminal Tracker (PiTerm).  
+
+The Polhemus Terminal Tracker is a GTK+ application that requires GTK+-2.0 or greater.  In order to build and install this application a user may have to acquire the GTK+ development package.  This should be obtained through your Linux distribution package manager if possible.  The package will probably end with -dev (Debian,Ubuntu) or -devel (Red Hat,Fedora).  eg. libgtk2.0-dev or gtk+-devel.  If it is not possible to get a distribution package then GTK can be obtained at http://www.gtk.org/download.html.  After the GTK development package has been intalled proceed with the installations below.
+
+Since the Polhemus Terminal Tracker requires the libusb-1.0 library you must first build and intall that:
+
+1.  Copy libusb-1.0.0.tar.bz2 to a directory of your choice. Unzip with 'tar -xvjf libusb-1.0.0.tar.bz2'.
+
+2.  cd to the directory where the libusb files were just extracted to (libusb-1.0).
+
+3.  run ./configure, then make, then 'make install'.  You will probably need root authority.  See libusb documentation for more information.
+
+4.  run ldconfig.
+
+Please note that libusb-1.0.0 is not backwards compatible with previous versions.  The latest release may be obtained at: 
+http://libusb.wiki.sourceforge.net/Libusb1.0.
+
+
+
+Next install the Polhemus Terminal Tracker:
+
+
+1.  Copy polhemus-tracker-terminal-1.0.0.tar.gz to a directory of your choice. Unzip with 'tar -xvzf polhemus-tracker-terminal-1.0.0.tar.gz'.
+
+2.  cd to the directory where the PiTerm files were just extracted to (polhemus-tracker-terminal-1.0.0).
+
+3.  run ./configure, then make, then 'make install'.  Again you will need root authority.  This will build the source code and install it on your system.  See the INSTALL file for more detailed information.
+
+The following steps refer to setting up a Polhemus Tracker to communicate over USB.
+
+4.  Polhemus trackers download USB firmware from the host when they are connected.  This firmware should have been installed to /usr/local/share/PolhemusUsb. This firmware is not part of the Polhemus Tracker Terminal Release and therefore not governed under the GNU Public license.  It is provided along with this release as a convenience to allow USB communications with Polhemus trackers.
+
+5.  A rules file has been installed to /etc/udev/rules.d.  The rules file notifies the system which USB firmware to download to the tracker that was just plugged in.  If you decide to change the location of the USB firmware files you must change the rule file (50-Polhemus_FW.rules) to reflect the change.
+
+5.  If you have an Ubuntu system, add the following line to the /etc/fstab file:  usbfs /proc/bus/usb usbfs auto 0 0.  See note below.
+
+6.  Restart system.
+
+
+
+After following these steps you should be able to communicate with Polhemus trackers using the Tracker Terminal over USB or RS232. However you may have to change the permissions to allow a non-super user to open the RS232 port.
+eg. as root:  chmod 0666 /dev/ttyS0
+
+***********************************************************************************************************************************************************
+
+Special note to Ubuntu users:
+
+In order for the proper I/O firmware to be loaded to a Polhemus tracker when running under USB, the device must be mounted in the /proc/bus/usb directory. This is not the default for Ubuntu as of version 8.10.
+
+The following line should be added to the /etc/fstab file:
+
+usbfs /proc/bus/usb usbfs auto 0 0
+
+
+This will mount the trackers in the proper place and allow the firmware to be loaded properly when plugged in via USB.

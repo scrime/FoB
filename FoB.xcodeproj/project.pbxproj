@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44C7867911E5CBC000F26198 /* Standardization.c in Sources */ = {isa = PBXBuildFile; fileRef = 44C7867811E5CBC000F26198 /* Standardization.c */; };
+		44C786C211E5E02700F26198 /* Send.c in Sources */ = {isa = PBXBuildFile; fileRef = 44C786C111E5E02700F26198 /* Send.c */; };
+		44CDA12111E71D9B00B64F76 /* Smoothing.c in Sources */ = {isa = PBXBuildFile; fileRef = 44CDA12011E71D9B00B64F76 /* Smoothing.c */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		92128D1D0C0F2A4D0089E30D /* FoBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92128D1B0C0F2A4D0089E30D /* FoBController.m */; };
+		9228F19D10A5C10900A4E8EF /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F19C10A5C10900A4E8EF /* config.h */; };
+		9228F19E10A5C10900A4E8EF /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F19C10A5C10900A4E8EF /* config.h */; };
+		9228F1B110A5C12700A4E8EF /* flock.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F19F10A5C12700A4E8EF /* flock.c */; };
+		9228F1B210A5C12700A4E8EF /* flock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A010A5C12700A4E8EF /* flock.h */; };
+		9228F1B310A5C12700A4E8EF /* flock_bird.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1A110A5C12700A4E8EF /* flock_bird.c */; };
+		9228F1B410A5C12700A4E8EF /* flock_bird.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A210A5C12700A4E8EF /* flock_bird.h */; };
+		9228F1B510A5C12700A4E8EF /* flock_bird_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A310A5C12700A4E8EF /* flock_bird_private.h */; };
+		9228F1B610A5C12700A4E8EF /* flock_bird_record.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1A410A5C12700A4E8EF /* flock_bird_record.c */; };
+		9228F1B710A5C12700A4E8EF /* flock_bird_record.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A510A5C12700A4E8EF /* flock_bird_record.h */; };
+		9228F1B810A5C12700A4E8EF /* flock_command.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1A610A5C12700A4E8EF /* flock_command.c */; };
+		9228F1B910A5C12700A4E8EF /* flock_command.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A710A5C12700A4E8EF /* flock_command.h */; };
+		9228F1BA10A5C12700A4E8EF /* flock_command_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A810A5C12700A4E8EF /* flock_command_private.h */; };
+		9228F1BB10A5C12700A4E8EF /* flock_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A910A5C12700A4E8EF /* flock_common.h */; };
+		9228F1BC10A5C12700A4E8EF /* flock_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1AA10A5C12700A4E8EF /* flock_error.c */; };
+		9228F1BD10A5C12700A4E8EF /* flock_error.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1AB10A5C12700A4E8EF /* flock_error.h */; };
+		9228F1BE10A5C12700A4E8EF /* flock_hl.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1AC10A5C12700A4E8EF /* flock_hl.c */; };
+		9228F1BF10A5C12700A4E8EF /* flock_hl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1AD10A5C12700A4E8EF /* flock_hl.h */; };
+		9228F1C010A5C12700A4E8EF /* flock_mode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1AE10A5C12700A4E8EF /* flock_mode.c */; };
+		9228F1C110A5C12700A4E8EF /* flock_mode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1AF10A5C12700A4E8EF /* flock_mode.h */; };
+		9228F1C210A5C12700A4E8EF /* flock_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1B010A5C12700A4E8EF /* flock_private.h */; };
+		9228F1C310A5C12700A4E8EF /* flock.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F19F10A5C12700A4E8EF /* flock.c */; };
+		9228F1C410A5C12700A4E8EF /* flock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A010A5C12700A4E8EF /* flock.h */; };
+		9228F1C510A5C12700A4E8EF /* flock_bird.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1A110A5C12700A4E8EF /* flock_bird.c */; };
+		9228F1C610A5C12700A4E8EF /* flock_bird.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A210A5C12700A4E8EF /* flock_bird.h */; };
+		9228F1C710A5C12700A4E8EF /* flock_bird_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A310A5C12700A4E8EF /* flock_bird_private.h */; };
+		9228F1C810A5C12700A4E8EF /* flock_bird_record.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1A410A5C12700A4E8EF /* flock_bird_record.c */; };
+		9228F1C910A5C12700A4E8EF /* flock_bird_record.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A510A5C12700A4E8EF /* flock_bird_record.h */; };
+		9228F1CA10A5C12700A4E8EF /* flock_command.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1A610A5C12700A4E8EF /* flock_command.c */; };
+		9228F1CB10A5C12700A4E8EF /* flock_command.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A710A5C12700A4E8EF /* flock_command.h */; };
+		9228F1CC10A5C12700A4E8EF /* flock_command_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A810A5C12700A4E8EF /* flock_command_private.h */; };
+		9228F1CD10A5C12700A4E8EF /* flock_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1A910A5C12700A4E8EF /* flock_common.h */; };
+		9228F1CE10A5C12700A4E8EF /* flock_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1AA10A5C12700A4E8EF /* flock_error.c */; };
+		9228F1CF10A5C12700A4E8EF /* flock_error.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1AB10A5C12700A4E8EF /* flock_error.h */; };
+		9228F1D010A5C12700A4E8EF /* flock_hl.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1AC10A5C12700A4E8EF /* flock_hl.c */; };
+		9228F1D110A5C12700A4E8EF /* flock_hl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1AD10A5C12700A4E8EF /* flock_hl.h */; };
+		9228F1D210A5C12700A4E8EF /* flock_mode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9228F1AE10A5C12700A4E8EF /* flock_mode.c */; };
+		9228F1D310A5C12700A4E8EF /* flock_mode.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1AF10A5C12700A4E8EF /* flock_mode.h */; };
+		9228F1D410A5C12700A4E8EF /* flock_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9228F1B010A5C12700A4E8EF /* flock_private.h */; };
+		923D75480C117FCD000E5446 /* OSC.c in Sources */ = {isa = PBXBuildFile; fileRef = 923D75460C117FCD000E5446 /* OSC.c */; };
+		923D75DE0C118A3D000E5446 /* libflock-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 923D75C20C118987000E5446 /* libflock-static.a */; };
+		928898EB1099A0A1007115E9 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928898EA1099A0A1007115E9 /* IOKit.framework */; };
+		92894CF610A5B44900AC39F8 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 92894CF010A5B44900AC39F8 /* core.c */; };
+		92894CF710A5B44900AC39F8 /* descriptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 92894CF110A5B44900AC39F8 /* descriptor.c */; };
+		92894CF810A5B44900AC39F8 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 92894CF210A5B44900AC39F8 /* io.c */; };
+		92894CF910A5B44900AC39F8 /* libusb.h in Headers */ = {isa = PBXBuildFile; fileRef = 92894CF310A5B44900AC39F8 /* libusb.h */; };
+		92894CFA10A5B44900AC39F8 /* libusbi.h in Headers */ = {isa = PBXBuildFile; fileRef = 92894CF410A5B44900AC39F8 /* libusbi.h */; };
+		92894CFB10A5B44900AC39F8 /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = 92894CF510A5B44900AC39F8 /* sync.c */; };
+		92894CFE10A5B46400AC39F8 /* darwin_usb.c in Sources */ = {isa = PBXBuildFile; fileRef = 92894CFC10A5B46400AC39F8 /* darwin_usb.c */; };
+		92894CFF10A5B46400AC39F8 /* darwin_usb.h in Headers */ = {isa = PBXBuildFile; fileRef = 92894CFD10A5B46400AC39F8 /* darwin_usb.h */; };
+		92894D0210A5B5EF00AC39F8 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 92894D0110A5B5EF00AC39F8 /* config.h */; };
+		92894D0710A5B73B00AC39F8 /* libusb-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92894CEA10A5B31700AC39F8 /* libusb-static.a */; };
+		929F5A4B10A5DD55007E7071 /* PiTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 929F5A4910A5DD55007E7071 /* PiTracker.cpp */; };
+		92C09929107BC32500D208D6 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C09928107BC32500D208D6 /* Tracker.m */; };
+		92C09932107BC48A00D208D6 /* Flock.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C0992F107BC48A00D208D6 /* Flock.m */; };
+		92C09933107BC48A00D208D6 /* Liberty.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C09931107BC48A00D208D6 /* Liberty.m */; };
+		92C4E18C109B66D800E4500D /* ezusb.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C4E18A109B66D800E4500D /* ezusb.m */; };
+		92C4E267109B6C1200E4500D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		92DB7BDB109A182A00F3E4A3 /* a3load.hex in Resources */ = {isa = PBXBuildFile; fileRef = 92DB7BD8109A182A00F3E4A3 /* a3load.hex */; };
+		92DB7BDC109A182A00F3E4A3 /* fxload in Resources */ = {isa = PBXBuildFile; fileRef = 92DB7BD9109A182A00F3E4A3 /* fxload */; };
+		92DB7BDD109A182A00F3E4A3 /* LbtyUsbHS.hex in Resources */ = {isa = PBXBuildFile; fileRef = 92DB7BDA109A182A00F3E4A3 /* LbtyUsbHS.hex */; };
+		92DB7BEB109A1C0400F3E4A3 /* liberty_hl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92E24E7A10986CBB0079C9ED /* liberty_hl.cpp */; };
+		92F413650C21BF9100C2EF7D /* Keyboard.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92F413630C21BF9100C2EF7D /* Keyboard.txt */; };
+		92F413660C21BF9100C2EF7D /* ManyInstruments.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92F413640C21BF9100C2EF7D /* ManyInstruments.txt */; };
+		92F6C5900C20364B008CD510 /* SetList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 92F6C58F0C20364B008CD510 /* SetList.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		923D75DC0C118A30000E5446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 923D75C10C118987000E5446;
+			remoteInfo = "libflock-static";
+		};
+		92894D0510A5B73000AC39F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92894CD010A5B31700AC39F8;
+			remoteInfo = "libusb-static";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* FoB_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoB_Prefix.pch; sourceTree = "<group>"; };
+		44C7867711E5CBC000F26198 /* Standardization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Standardization.h; sourceTree = "<group>"; };
+		44C7867811E5CBC000F26198 /* Standardization.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Standardization.c; sourceTree = "<group>"; };
+		44C786C011E5E02700F26198 /* Send.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Send.h; sourceTree = "<group>"; };
+		44C786C111E5E02700F26198 /* Send.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Send.c; sourceTree = "<group>"; };
+		44CDA11F11E71D9B00B64F76 /* Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smoothing.h; sourceTree = "<group>"; };
+		44CDA12011E71D9B00B64F76 /* Smoothing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Smoothing.c; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* FoB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92128D1B0C0F2A4D0089E30D /* FoBController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FoBController.m; sourceTree = "<group>"; };
+		92128D1C0C0F2A4D0089E30D /* FoBController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FoBController.h; sourceTree = "<group>"; };
+		9228F19C10A5C10900A4E8EF /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libflock/config.h; sourceTree = "<group>"; };
+		9228F19F10A5C12700A4E8EF /* flock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = flock.c; path = libflock/flock/flock.c; sourceTree = "<group>"; };
+		9228F1A010A5C12700A4E8EF /* flock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock.h; path = libflock/flock/flock.h; sourceTree = "<group>"; };
+		9228F1A110A5C12700A4E8EF /* flock_bird.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = flock_bird.c; path = libflock/flock/flock_bird.c; sourceTree = "<group>"; };
+		9228F1A210A5C12700A4E8EF /* flock_bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_bird.h; path = libflock/flock/flock_bird.h; sourceTree = "<group>"; };
+		9228F1A310A5C12700A4E8EF /* flock_bird_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_bird_private.h; path = libflock/flock/flock_bird_private.h; sourceTree = "<group>"; };
+		9228F1A410A5C12700A4E8EF /* flock_bird_record.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = flock_bird_record.c; path = libflock/flock/flock_bird_record.c; sourceTree = "<group>"; };
+		9228F1A510A5C12700A4E8EF /* flock_bird_record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_bird_record.h; path = libflock/flock/flock_bird_record.h; sourceTree = "<group>"; };
+		9228F1A610A5C12700A4E8EF /* flock_command.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = flock_command.c; path = libflock/flock/flock_command.c; sourceTree = "<group>"; };
+		9228F1A710A5C12700A4E8EF /* flock_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_command.h; path = libflock/flock/flock_command.h; sourceTree = "<group>"; };
+		9228F1A810A5C12700A4E8EF /* flock_command_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_command_private.h; path = libflock/flock/flock_command_private.h; sourceTree = "<group>"; };
+		9228F1A910A5C12700A4E8EF /* flock_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_common.h; path = libflock/flock/flock_common.h; sourceTree = "<group>"; };
+		9228F1AA10A5C12700A4E8EF /* flock_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = flock_error.c; path = libflock/flock/flock_error.c; sourceTree = "<group>"; };
+		9228F1AB10A5C12700A4E8EF /* flock_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_error.h; path = libflock/flock/flock_error.h; sourceTree = "<group>"; };
+		9228F1AC10A5C12700A4E8EF /* flock_hl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = flock_hl.c; path = libflock/flock/flock_hl.c; sourceTree = "<group>"; };
+		9228F1AD10A5C12700A4E8EF /* flock_hl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_hl.h; path = libflock/flock/flock_hl.h; sourceTree = "<group>"; };
+		9228F1AE10A5C12700A4E8EF /* flock_mode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = flock_mode.c; path = libflock/flock/flock_mode.c; sourceTree = "<group>"; };
+		9228F1AF10A5C12700A4E8EF /* flock_mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_mode.h; path = libflock/flock/flock_mode.h; sourceTree = "<group>"; };
+		9228F1B010A5C12700A4E8EF /* flock_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flock_private.h; path = libflock/flock/flock_private.h; sourceTree = "<group>"; };
+		923D74DF0C117AF4000E5446 /* libflock.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libflock.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		923D75460C117FCD000E5446 /* OSC.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = OSC.c; path = libflock/flockUtils/OSC.c; sourceTree = "<group>"; };
+		923D75470C117FCD000E5446 /* OSC.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = OSC.h; path = libflock/flockUtils/OSC.h; sourceTree = "<group>"; };
+		923D75C20C118987000E5446 /* libflock-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libflock-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		928898EA1099A0A1007115E9 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		92894CEA10A5B31700AC39F8 /* libusb-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libusb-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92894CF010A5B44900AC39F8 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = core.c; path = "libusb-1.0.4/libusb/core.c"; sourceTree = "<group>"; };
+		92894CF110A5B44900AC39F8 /* descriptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = descriptor.c; path = "libusb-1.0.4/libusb/descriptor.c"; sourceTree = "<group>"; };
+		92894CF210A5B44900AC39F8 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = io.c; path = "libusb-1.0.4/libusb/io.c"; sourceTree = "<group>"; };
+		92894CF310A5B44900AC39F8 /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libusb.h; path = "libusb-1.0.4/libusb/libusb.h"; sourceTree = "<group>"; };
+		92894CF410A5B44900AC39F8 /* libusbi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libusbi.h; path = "libusb-1.0.4/libusb/libusbi.h"; sourceTree = "<group>"; };
+		92894CF510A5B44900AC39F8 /* sync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sync.c; path = "libusb-1.0.4/libusb/sync.c"; sourceTree = "<group>"; };
+		92894CFC10A5B46400AC39F8 /* darwin_usb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = darwin_usb.c; path = "libusb-1.0.4/libusb/os/darwin_usb.c"; sourceTree = "<group>"; };
+		92894CFD10A5B46400AC39F8 /* darwin_usb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = darwin_usb.h; path = "libusb-1.0.4/libusb/os/darwin_usb.h"; sourceTree = "<group>"; };
+		92894D0110A5B5EF00AC39F8 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "libusb-1.0.4/config.h"; sourceTree = "<group>"; };
+		929F5A4910A5DD55007E7071 /* PiTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PiTracker.cpp; path = "polhemus-tracker-terminal-1.0.0/src/PiTracker.cpp"; sourceTree = "<group>"; };
+		929F5A4A10A5DD55007E7071 /* PiTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PiTracker.h; path = "polhemus-tracker-terminal-1.0.0/src/PiTracker.h"; sourceTree = "<group>"; };
+		92C09927107BC32500D208D6 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		92C09928107BC32500D208D6 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracker.m; sourceTree = "<group>"; };
+		92C0992E107BC48A00D208D6 /* Flock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flock.h; sourceTree = "<group>"; };
+		92C0992F107BC48A00D208D6 /* Flock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flock.m; sourceTree = "<group>"; };
+		92C09930107BC48A00D208D6 /* Liberty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Liberty.h; sourceTree = "<group>"; };
+		92C09931107BC48A00D208D6 /* Liberty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Liberty.m; sourceTree = "<group>"; };
+		92C4E189109B66D800E4500D /* ezusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ezusb.h; sourceTree = "<group>"; };
+		92C4E18A109B66D800E4500D /* ezusb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ezusb.m; sourceTree = "<group>"; };
+		92DB7BD8109A182A00F3E4A3 /* a3load.hex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = a3load.hex; path = "polhemus-tracker-terminal-1.0.0/usbfw/a3load.hex"; sourceTree = "<group>"; };
+		92DB7BD9109A182A00F3E4A3 /* fxload */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = fxload; sourceTree = "<group>"; };
+		92DB7BDA109A182A00F3E4A3 /* LbtyUsbHS.hex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LbtyUsbHS.hex; path = "polhemus-tracker-terminal-1.0.0/usbfw/LbtyUsbHS.hex"; sourceTree = "<group>"; };
+		92E24E7A10986CBB0079C9ED /* liberty_hl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = liberty_hl.cpp; sourceTree = "<group>"; };
+		92E24E7B10986CBB0079C9ED /* liberty_hl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liberty_hl.h; sourceTree = "<group>"; };
+		92E24E7D10986FE60079C9ED /* bird_record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bird_record.h; sourceTree = "<group>"; };
+		92F413630C21BF9100C2EF7D /* Keyboard.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Keyboard.txt; sourceTree = "<group>"; };
+		92F413640C21BF9100C2EF7D /* ManyInstruments.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ManyInstruments.txt; sourceTree = "<group>"; };
+		92F6C58F0C20364B008CD510 /* SetList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SetList.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				923D75DE0C118A3D000E5446 /* libflock-static.a in Frameworks */,
+				928898EB1099A0A1007115E9 /* IOKit.framework in Frameworks */,
+				92C4E267109B6C1200E4500D /* Foundation.framework in Frameworks */,
+				92894D0710A5B73B00AC39F8 /* libusb-static.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923D74DD0C117AF4000E5446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923D75C00C118987000E5446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92894CE610A5B31700AC39F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44C786C011E5E02700F26198 /* Send.h */,
+				44C786C111E5E02700F26198 /* Send.c */,
+				44CDA11F11E71D9B00B64F76 /* Smoothing.h */,
+				44CDA12011E71D9B00B64F76 /* Smoothing.c */,
+				92E24E7D10986FE60079C9ED /* bird_record.h */,
+				92C0992E107BC48A00D208D6 /* Flock.h */,
+				92C0992F107BC48A00D208D6 /* Flock.m */,
+				92C09930107BC48A00D208D6 /* Liberty.h */,
+				92C09931107BC48A00D208D6 /* Liberty.m */,
+				92128D1B0C0F2A4D0089E30D /* FoBController.m */,
+				92128D1C0C0F2A4D0089E30D /* FoBController.h */,
+				92C09927107BC32500D208D6 /* Tracker.h */,
+				92C09928107BC32500D208D6 /* Tracker.m */,
+				44C7867711E5CBC000F26198 /* Standardization.h */,
+				44C7867811E5CBC000F26198 /* Standardization.c */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				928898EA1099A0A1007115E9 /* IOKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* FoB.app */,
+				923D74DF0C117AF4000E5446 /* libflock.dylib */,
+				923D75C20C118987000E5446 /* libflock-static.a */,
+				92894CEA10A5B31700AC39F8 /* libusb-static.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* FoB */ = {
+			isa = PBXGroup;
+			children = (
+				92E24E7910986C8F0079C9ED /* liberty */,
+				923D75090C117BDC000E5446 /* libflock */,
+				92894CEF10A5B3A000AC39F8 /* libusb */,
+				9288983B10999EFF007115E9 /* USB */,
+				923D75490C117FE8000E5446 /* OSC */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = FoB;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* FoB_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92DB7BD8109A182A00F3E4A3 /* a3load.hex */,
+				92DB7BD9109A182A00F3E4A3 /* fxload */,
+				92DB7BDA109A182A00F3E4A3 /* LbtyUsbHS.hex */,
+				92F413630C21BF9100C2EF7D /* Keyboard.txt */,
+				92F413640C21BF9100C2EF7D /* ManyInstruments.txt */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				92F6C58F0C20364B008CD510 /* SetList.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		923D75090C117BDC000E5446 /* libflock */ = {
+			isa = PBXGroup;
+			children = (
+				9228F19C10A5C10900A4E8EF /* config.h */,
+				9228F19F10A5C12700A4E8EF /* flock.c */,
+				9228F1A010A5C12700A4E8EF /* flock.h */,
+				9228F1A110A5C12700A4E8EF /* flock_bird.c */,
+				9228F1A210A5C12700A4E8EF /* flock_bird.h */,
+				9228F1A310A5C12700A4E8EF /* flock_bird_private.h */,
+				9228F1A410A5C12700A4E8EF /* flock_bird_record.c */,
+				9228F1A510A5C12700A4E8EF /* flock_bird_record.h */,
+				9228F1A610A5C12700A4E8EF /* flock_command.c */,
+				9228F1A710A5C12700A4E8EF /* flock_command.h */,
+				9228F1A810A5C12700A4E8EF /* flock_command_private.h */,
+				9228F1A910A5C12700A4E8EF /* flock_common.h */,
+				9228F1AA10A5C12700A4E8EF /* flock_error.c */,
+				9228F1AB10A5C12700A4E8EF /* flock_error.h */,
+				9228F1AC10A5C12700A4E8EF /* flock_hl.c */,
+				9228F1AD10A5C12700A4E8EF /* flock_hl.h */,
+				9228F1AE10A5C12700A4E8EF /* flock_mode.c */,
+				9228F1AF10A5C12700A4E8EF /* flock_mode.h */,
+				9228F1B010A5C12700A4E8EF /* flock_private.h */,
+			);
+			name = libflock;
+			sourceTree = "<group>";
+		};
+		923D75490C117FE8000E5446 /* OSC */ = {
+			isa = PBXGroup;
+			children = (
+				923D75460C117FCD000E5446 /* OSC.c */,
+				923D75470C117FCD000E5446 /* OSC.h */,
+			);
+			name = OSC;
+			sourceTree = "<group>";
+		};
+		9288983B10999EFF007115E9 /* USB */ = {
+			isa = PBXGroup;
+			children = (
+				92C4E189109B66D800E4500D /* ezusb.h */,
+				92C4E18A109B66D800E4500D /* ezusb.m */,
+			);
+			name = USB;
+			sourceTree = "<group>";
+		};
+		92894CEF10A5B3A000AC39F8 /* libusb */ = {
+			isa = PBXGroup;
+			children = (
+				92894D0110A5B5EF00AC39F8 /* config.h */,
+				92894CFC10A5B46400AC39F8 /* darwin_usb.c */,
+				92894CFD10A5B46400AC39F8 /* darwin_usb.h */,
+				92894CF010A5B44900AC39F8 /* core.c */,
+				92894CF110A5B44900AC39F8 /* descriptor.c */,
+				92894CF210A5B44900AC39F8 /* io.c */,
+				92894CF310A5B44900AC39F8 /* libusb.h */,
+				92894CF410A5B44900AC39F8 /* libusbi.h */,
+				92894CF510A5B44900AC39F8 /* sync.c */,
+			);
+			name = libusb;
+			sourceTree = "<group>";
+		};
+		92E24E7910986C8F0079C9ED /* liberty */ = {
+			isa = PBXGroup;
+			children = (
+				929F5A4910A5DD55007E7071 /* PiTracker.cpp */,
+				929F5A4A10A5DD55007E7071 /* PiTracker.h */,
+				92E24E7B10986CBB0079C9ED /* liberty_hl.h */,
+				92E24E7A10986CBB0079C9ED /* liberty_hl.cpp */,
+			);
+			name = liberty;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		923D74DB0C117AF4000E5446 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9228F19E10A5C10900A4E8EF /* config.h in Headers */,
+				9228F1C410A5C12700A4E8EF /* flock.h in Headers */,
+				9228F1C610A5C12700A4E8EF /* flock_bird.h in Headers */,
+				9228F1C710A5C12700A4E8EF /* flock_bird_private.h in Headers */,
+				9228F1C910A5C12700A4E8EF /* flock_bird_record.h in Headers */,
+				9228F1CB10A5C12700A4E8EF /* flock_command.h in Headers */,
+				9228F1CC10A5C12700A4E8EF /* flock_command_private.h in Headers */,
+				9228F1CD10A5C12700A4E8EF /* flock_common.h in Headers */,
+				9228F1CF10A5C12700A4E8EF /* flock_error.h in Headers */,
+				9228F1D110A5C12700A4E8EF /* flock_hl.h in Headers */,
+				9228F1D310A5C12700A4E8EF /* flock_mode.h in Headers */,
+				9228F1D410A5C12700A4E8EF /* flock_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923D75BE0C118987000E5446 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9228F19D10A5C10900A4E8EF /* config.h in Headers */,
+				9228F1B210A5C12700A4E8EF /* flock.h in Headers */,
+				9228F1B410A5C12700A4E8EF /* flock_bird.h in Headers */,
+				9228F1B510A5C12700A4E8EF /* flock_bird_private.h in Headers */,
+				9228F1B710A5C12700A4E8EF /* flock_bird_record.h in Headers */,
+				9228F1B910A5C12700A4E8EF /* flock_command.h in Headers */,
+				9228F1BA10A5C12700A4E8EF /* flock_command_private.h in Headers */,
+				9228F1BB10A5C12700A4E8EF /* flock_common.h in Headers */,
+				9228F1BD10A5C12700A4E8EF /* flock_error.h in Headers */,
+				9228F1BF10A5C12700A4E8EF /* flock_hl.h in Headers */,
+				9228F1C110A5C12700A4E8EF /* flock_mode.h in Headers */,
+				9228F1C210A5C12700A4E8EF /* flock_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92894CD110A5B31700AC39F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92894CF910A5B44900AC39F8 /* libusb.h in Headers */,
+				92894CFA10A5B44900AC39F8 /* libusbi.h in Headers */,
+				92894CFF10A5B46400AC39F8 /* darwin_usb.h in Headers */,
+				92894D0210A5B5EF00AC39F8 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* FoB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "FoB" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				923D75DD0C118A30000E5446 /* PBXTargetDependency */,
+				92894D0610A5B73000AC39F8 /* PBXTargetDependency */,
+			);
+			name = FoB;
+			productInstallPath = "$(HOME)/Applications";
+			productName = FoB;
+			productReference = 8D1107320486CEB800E47090 /* FoB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		923D74DE0C117AF4000E5446 /* libflock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 923D74E20C117B12000E5446 /* Build configuration list for PBXNativeTarget "libflock" */;
+			buildPhases = (
+				923D74DB0C117AF4000E5446 /* Headers */,
+				923D74DC0C117AF4000E5446 /* Sources */,
+				923D74DD0C117AF4000E5446 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libflock;
+			productName = libflock;
+			productReference = 923D74DF0C117AF4000E5446 /* libflock.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		923D75C10C118987000E5446 /* libflock-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 923D75C30C1189C8000E5446 /* Build configuration list for PBXNativeTarget "libflock-static" */;
+			buildPhases = (
+				923D75BE0C118987000E5446 /* Headers */,
+				923D75BF0C118987000E5446 /* Sources */,
+				923D75C00C118987000E5446 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libflock-static";
+			productName = "libflock-static";
+			productReference = 923D75C20C118987000E5446 /* libflock-static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		92894CD010A5B31700AC39F8 /* libusb-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92894CE710A5B31700AC39F8 /* Build configuration list for PBXNativeTarget "libusb-static" */;
+			buildPhases = (
+				92894CD110A5B31700AC39F8 /* Headers */,
+				92894CDE10A5B31700AC39F8 /* Sources */,
+				92894CE610A5B31700AC39F8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libusb-static";
+			productName = "libflock-static";
+			productReference = 92894CEA10A5B31700AC39F8 /* libusb-static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FoB" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* FoB */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				923D74DE0C117AF4000E5446 /* libflock */,
+				923D75C10C118987000E5446 /* libflock-static */,
+				92894CD010A5B31700AC39F8 /* libusb-static */,
+				8D1107260486CEB800E47090 /* FoB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				92F6C5900C20364B008CD510 /* SetList.txt in Resources */,
+				92F413650C21BF9100C2EF7D /* Keyboard.txt in Resources */,
+				92F413660C21BF9100C2EF7D /* ManyInstruments.txt in Resources */,
+				92DB7BDB109A182A00F3E4A3 /* a3load.hex in Resources */,
+				92DB7BDC109A182A00F3E4A3 /* fxload in Resources */,
+				92DB7BDD109A182A00F3E4A3 /* LbtyUsbHS.hex in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				92128D1D0C0F2A4D0089E30D /* FoBController.m in Sources */,
+				923D75480C117FCD000E5446 /* OSC.c in Sources */,
+				92C09929107BC32500D208D6 /* Tracker.m in Sources */,
+				92C09932107BC48A00D208D6 /* Flock.m in Sources */,
+				92C09933107BC48A00D208D6 /* Liberty.m in Sources */,
+				92DB7BEB109A1C0400F3E4A3 /* liberty_hl.cpp in Sources */,
+				92C4E18C109B66D800E4500D /* ezusb.m in Sources */,
+				929F5A4B10A5DD55007E7071 /* PiTracker.cpp in Sources */,
+				44C7867911E5CBC000F26198 /* Standardization.c in Sources */,
+				44C786C211E5E02700F26198 /* Send.c in Sources */,
+				44CDA12111E71D9B00B64F76 /* Smoothing.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923D74DC0C117AF4000E5446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9228F1C310A5C12700A4E8EF /* flock.c in Sources */,
+				9228F1C510A5C12700A4E8EF /* flock_bird.c in Sources */,
+				9228F1C810A5C12700A4E8EF /* flock_bird_record.c in Sources */,
+				9228F1CA10A5C12700A4E8EF /* flock_command.c in Sources */,
+				9228F1CE10A5C12700A4E8EF /* flock_error.c in Sources */,
+				9228F1D010A5C12700A4E8EF /* flock_hl.c in Sources */,
+				9228F1D210A5C12700A4E8EF /* flock_mode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923D75BF0C118987000E5446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9228F1B110A5C12700A4E8EF /* flock.c in Sources */,
+				9228F1B310A5C12700A4E8EF /* flock_bird.c in Sources */,
+				9228F1B610A5C12700A4E8EF /* flock_bird_record.c in Sources */,
+				9228F1B810A5C12700A4E8EF /* flock_command.c in Sources */,
+				9228F1BC10A5C12700A4E8EF /* flock_error.c in Sources */,
+				9228F1BE10A5C12700A4E8EF /* flock_hl.c in Sources */,
+				9228F1C010A5C12700A4E8EF /* flock_mode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92894CDE10A5B31700AC39F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92894CF610A5B44900AC39F8 /* core.c in Sources */,
+				92894CF710A5B44900AC39F8 /* descriptor.c in Sources */,
+				92894CF810A5B44900AC39F8 /* io.c in Sources */,
+				92894CFB10A5B44900AC39F8 /* sync.c in Sources */,
+				92894CFE10A5B46400AC39F8 /* darwin_usb.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		923D75DD0C118A30000E5446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 923D75C10C118987000E5446 /* libflock-static */;
+			targetProxy = 923D75DC0C118A30000E5446 /* PBXContainerItemProxy */;
+		};
+		92894D0610A5B73000AC39F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92894CD010A5B31700AC39F8 /* libusb-static */;
+			targetProxy = 92894D0510A5B73000AC39F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		923D74E30C117B12000E5446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = libflock;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = "-Wall";
+				PREBINDING = NO;
+				PRODUCT_NAME = flock;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		923D74E40C117B12000E5446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = libflock;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = "-Wall";
+				PREBINDING = NO;
+				PRODUCT_NAME = flock;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		923D75C40C1189C8000E5446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = libflock;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = "flock-static";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		923D75C50C1189C8000E5446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = libflock;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = "flock-static";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		92894CE810A5B31700AC39F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"libusb-1.0.4",
+					"libusb-1.0.4/libusb",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = "usb-static";
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		92894CE910A5B31700AC39F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					"libusb-1.0.4",
+					"libusb-1.0.4/libusb",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = "usb-static";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					libflock,
+					"libusb-1.0.4",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_CFLAGS = "-Wall";
+				PRODUCT_NAME = FoB;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = (
+					libflock,
+					"libusb-1.0.4",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_CFLAGS = "-Wall";
+				PRODUCT_NAME = FoB;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		923D74E20C117B12000E5446 /* Build configuration list for PBXNativeTarget "libflock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923D74E30C117B12000E5446 /* Debug */,
+				923D74E40C117B12000E5446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		923D75C30C1189C8000E5446 /* Build configuration list for PBXNativeTarget "libflock-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				923D75C40C1189C8000E5446 /* Debug */,
+				923D75C50C1189C8000E5446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92894CE710A5B31700AC39F8 /* Build configuration list for PBXNativeTarget "libusb-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92894CE810A5B31700AC39F8 /* Debug */,
+				92894CE910A5B31700AC39F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "FoB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FoB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /usr/local/share/PolhemusUsb
+./fxload -t fx -D $(./getdevpath -v 0f44 -p 0001) -I FastrakUSB.hex -s a3load.hex
+
+

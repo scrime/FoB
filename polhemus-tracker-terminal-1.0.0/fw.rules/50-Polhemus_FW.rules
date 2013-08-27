@@ -1,0 +1,34 @@
+# Patriot -- Load FW
+BUS=="usb", ATTRS{idVendor}=="0f44", ATTRS{idProduct}=="ef11",ACTION=="add", \
+RUN+="/usr/local/share/PolhemusUsb/loadPatFw"
+
+# Patriot -- Set Permissions
+ATTRS{idVendor}=="0f44", ATTRS{idProduct}=="ef12",ACTION=="add", \
+RUN+="/usr/local/share/PolhemusUsb/PiTrkPerm"
+
+
+# Liberty HS -- Load FW
+BUS=="usb", ATTRS{idVendor}=="0f44", ATTRS{idProduct}=="ff21",ACTION=="add", \
+RUN+="/usr/local/share/PolhemusUsb/loadLibHSFw"
+
+# Liberty HS -- Permissions
+ATTRS{idVendor}=="0f44", ATTRS{idProduct}=="ff20",ACTION=="add", \
+RUN+="/usr/local/share/PolhemusUsb/PiTrkPerm"
+
+# Liberty Legacy -- Load FW
+BUS=="usb", ATTRS{idVendor}=="0f44", ATTRS{idProduct}=="ff11",ACTION=="add", \
+RUN+="/usr/local/share/PolhemusUsb/loadLbtyFw"
+
+# Liberty Legacy -- Permissions
+ATTRS{idVendor}=="0f44", ATTRS{idProduct}=="ff12",ACTION=="add", \
+RUN+="/usr/local/share/PolhemusUsb/PiTrkPerm"
+
+# Fastrak -- Load FW
+BUS=="usb", ATTRS{idVendor}=="0f44", ATTRS{idProduct}=="0001",ACTION=="add", \
+RUN+="/usr/local/share/PolhemusUsb/loadFastrakFw"
+
+# Fastrak -- Permissions
+ATTRS{idVendor}=="0f44", ATTRS{idProduct}=="0002",ACTION=="add", \
+RUN+="/usr/local/share/PolhemusUsb/PiTrkPerm"
+
+

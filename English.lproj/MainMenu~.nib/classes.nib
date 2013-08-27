@@ -1,0 +1,46 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {guiAction = id; }; 
+            CLASS = FoBController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                chooseSetListButton = NSButton; 
+                currentInstruField = NSTextField; 
+                deviceField = NSComboBox; 
+                enableOSCSwitch = NSButton; 
+                enableSetList = NSButton; 
+                fileField = NSTextField; 
+                oscInputPortField = NSTextField; 
+                oscTargetField = NSTextField; 
+                oscTargetPortField = NSTextField; 
+                priorityField = NSTextField; 
+                sendCoordinatesSwitch = NSButton; 
+                setListField = NSTextField; 
+                showCoordinatesSwitch = NSButton; 
+                startStopButton = NSButton; 
+                statusField = NSTextField; 
+                x1Field = NSTextField; 
+                x2Field = NSTextField; 
+                xa1Field = NSTextField; 
+                xa2Field = NSTextField; 
+                y1Field = NSTextField; 
+                y2Field = NSTextField; 
+                ya1Field = NSTextField; 
+                ya2Field = NSTextField; 
+                z1Field = NSTextField; 
+                z2Field = NSTextField; 
+                za1Field = NSTextField; 
+                za2Field = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,33 @@
+Documentation.
+
+Use getopt_long in flockUtils.
+
+Store group and record mode in flock/birds.  Get flock status for
+initial values.
+
+Timestamped records.
+
+Error codes.
+
+Standalone/flock mode.
+
+Sleep/don't sleep.  Several commands require time to be executed by a
+flock.  The client should know this.  But maybe he can do something
+else than sleeping while the flock executes a command.  Would it be
+the library to call sleep, or the client ?
+
+Compute the size of command data and response without ambiguity.  The
+implementation is incomplete right now with regard to the
+specification of flock of birds, as found in the guide.  This requires
+to maintain a state for each flock, with current record size,
+streaming, group mode, addressing mode, etc.
+
+Old flocks don't have the same interface as new ones.  How can we
+manage this?
+
+Can we guess the number of birds connected to a flock, and which one
+has a transmitter and/or receiver?  Maybe we can examine the status of
+each bird.
+
+Rewrite libflock.m4.
+
