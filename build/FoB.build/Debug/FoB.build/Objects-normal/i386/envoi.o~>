@@ -1,2 +1,0 @@
-/Users/percussion_aerienne/Desktop/code FoB/Code FoB commenté - modifié - V1 - copie/FoB/envoi.c:162: error: conflicting types for 'send_bump'
-/Users/percussion_aerienne/Desktop/code FoB/Code FoB commenté - modifié - V1 - copie/FoB/envoi.h:74: error: previous declaration of 'send_bump' was here

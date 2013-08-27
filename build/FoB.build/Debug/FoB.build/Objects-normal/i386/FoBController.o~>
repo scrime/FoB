@@ -1,4 +1,0 @@
-/Users/percussion_aerienne/Desktop/code FoB/Code FoB commenté - modifié - V1 - copie/FoB/FoBController.m: In function '-[FoBController threadMain:]':
-/Users/percussion_aerienne/Desktop/code FoB/Code FoB commenté - modifié - V1 - copie/FoB/FoBController.m:635: warning: implicit declaration of function 'fill_host_addr'
-/Users/percussion_aerienne/Desktop/code FoB/Code FoB commenté - modifié - V1 - copie/FoB/FoBController.m:935: error: too many arguments to function 'send_bump'
-/Users/percussion_aerienne/Desktop/code FoB/Code FoB commenté - modifié - V1 - copie/FoB/FoBController.m:888: warning: unused variable 'sendCoordinates'
