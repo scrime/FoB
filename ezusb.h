@@ -1,9 +1,8 @@
 #ifndef __ezusb_H
 #define __ezusb_H
+#ifdef __cplusplus
 
 #include <stdint.h>
-
-#ifdef __cplusplus
 extern "C" {
 #endif
 
